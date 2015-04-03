@@ -1,9 +1,12 @@
 intlist = []
-import random
-while len(intlist)<9:
-  num = random.randint(1,10)
-  if num not in intlist:
-    intlist.append(num)              # 1. Создание списка целых чисел
+def fill(hhg):
+	import random
+	while len(hhg)<9:
+		num = random.randint(0,9)
+		if num not in hhg:
+			hhg.append(num)
+	return hhg
+fill(intlist)
 
 n = 1
 while len(intlist)>n:
