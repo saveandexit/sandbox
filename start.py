@@ -25,3 +25,9 @@ def dictfill(bco):
 		newdict[value] = index
 	return newdict
 intdict = dictfill(intlist)
+
+def keyswap(rasengan):
+	K = list(rasengan.keys())                 #4. Смена местами ключей и значений словаря
+	V = list(rasengan.values())
+	otherdict = dict(zip(V,K))
+keyswap(intdict)
