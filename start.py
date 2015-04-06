@@ -17,5 +17,11 @@ def bubble_swap(bfg):
 			if bfg[b]>bfg[b+1]:
 				swap(bfg,b,b+1)    #2. Сортировка методом пузырька
 		a -= 1
-
 bubble_swap(intlist)
+
+def dictfill(bco):
+	newdict = {}
+	for index, value in enumerate(bco):       #3. Создание из списка словаря вида ключ-индекс
+		newdict[value] = index
+	return newdict
+intdict = dictfill(intlist)
